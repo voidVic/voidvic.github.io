@@ -1,0 +1,415 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 50px;
+    transition: 0.5s ease-in;
+}
+
+.fr{
+    float: right;
+}
+.t-a-l{
+    text-align: left;
+}
+.m-t-20{
+    margin-top: 20px;
+}
+.quote{
+    font-style: italic;
+    color: #666666;
+}
+
+
+/* intro page */
+.intro-page{
+    background-image: url('../images/ankit-everest.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0px 0px 500px #000 inset;
+    height: 100vh;
+    width: 100vw;
+}
+
+.scroll-indicator{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: crosshair;
+}
+
+.name-block{
+    position: absolute;
+    top: 70vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color:#fff;
+    text-shadow: 4px 4px 5px #000;
+    z-index: 3;
+}
+.name-block .salutation{
+    font-style: italic;
+    font-size: 0.6em;
+}
+.name-block .name{
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 10px;
+}
+.name-block .name::before, .name-block .name::after{
+    background: #fff;
+    content: " ";
+    display: inline-block;
+    height: 3px;
+    margin: 0 10px;
+    position: absolute;
+    top: 65%;
+    width: 80px;
+    zoom: 1;
+    box-shadow: 0 4px 5px #000;
+}
+ .name-block .name::before{
+     right: 100%;
+ }
+
+
+ /*content layout section*/
+.navigation{
+    position: fixed;
+    height: 100vh;
+    width: 25%;
+    top: 0;
+    left: -25%;
+    background-color: rgba(245, 245, 245, 0.7);
+    color: #939393;
+    font-size: 0.4em;
+    text-align: center;
+    padding: 80px 0;
+    z-index: 10;
+}
+
+.background-blur{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+.navigation .navigation-button{
+    display: none;
+}
+
+.navigation .side-pic {
+    margin-bottom: 80px;
+    text-align: center;
+    color: #000;
+    font-size: 1.8em;
+    font-weight: 900;
+    cursor: crosshair;
+}
+.navigation .side-pic .dot{
+    color: #ccc;
+    font-size: 1.5em;
+    font-family: "Montserrat", Arial, sans-serif;
+    margin-left: -10px;
+}
+.navigation .nav{
+    cursor: crosshair;
+    padding: 20px;
+    height: 25px;
+}
+.navigation .nav:hover{
+    color: #000;
+}
+.navigation a{
+    text-decoration: unset;
+    color: unset;
+    cursor: unset;
+}
+.navigation .footer{
+    position: absolute;
+    bottom: 40px;
+    right: 1.5em;
+    left: 1.5em;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0 20px;
+}
+.navigation .footer a{
+    padding: 10px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+.navigation .footer a:hover{
+    font-weight: bolder;
+}
+
+
+
+/* media page*/
+.media-page{
+    height: 100vh;
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.page-header{
+    font-size: 1em;
+    margin: 50px 0;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.page-content{
+    font-size: 0.35em;
+    margin: 20px;
+    margin-left: 100px;
+    color: #999999;
+    min-height: 30vh;
+}
+.page-content p{
+    padding: 20px 50px 0 50px;
+}
+
+.input-txt{
+    height: 48px;
+    width: 400px;
+    border: 1px solid rgb(227, 227, 227);
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    padding: 0px 20px;
+    transition: border-color 200ms ease 0s, box-shadow 200ms ease 0s;
+    display: block;
+    margin:10px;
+}
+
+.input-txtar{
+    height: 100px;
+    border-radius: 16px;
+    font-size: 16px;
+    line-height: 1;
+    padding: 12px 20px;
+}
+
+.input-btn{
+    height: 56px;
+    width: 100%;
+    background: -webkit-linear-gradient(left, rgb(148, 115, 221) 0%, rgb(26, 201, 228) 100%);
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    border-radius: 30px;
+    display: block;
+    margin-top: 30px;
+}
+
+
+
+
+/*//////////////////////*/
+.input-m-class{
+	padding-top: 15px;
+    font-size: 16px;
+    margin: 10px;
+}
+.input-m-class label{
+	position: relative;
+	font-size: 1em;
+    top: 20px;
+    display: block;
+    text-align: left;
+	font-weight: 100;
+	margin: 0;
+	transition: 0.2s all linear;
+}
+.input-m-class label.active{
+	font-size: 0.6em;
+	top: 0;
+}
+
+.input-m-class input{
+	position: relative;
+	bottom: 0;
+	left: 0;
+	font-size: 1em;
+	border:0;
+	background-color: transparent;
+    width: 100%;
+    border-bottom: 1px solid rgb(227, 227, 227);
+
+}
+.input-m-class input[type=textarea]{
+}
+.input-m-class input:focus{
+	outline: none;
+	border-bottom: 2px solid var(--primaryColor);
+}
+
+.button-m{
+	background-color: var(--midnight);
+	border: none;
+	padding: 10px 10px;
+	width: 100%;
+	margin: 10px;
+	text-align: center;
+	font-size: 1.2em;
+	color: var(--colorLight);
+	box-shadow: 0 1px 5px #999;
+}
+.button-m:hover{
+	box-shadow: 0 2px 8px #999;
+}
+
+#map{
+    height: 400px;
+}
+
+/*Travel page*/
+
+.travel-card {
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #ccc;
+    display: grid;
+    margin-bottom: 20px;
+}
+
+.travel-title {
+    color: #444;
+    font-weight: 600;
+    /* border-top: 1px solid #999; */
+    padding-top: 20px;
+}
+
+.travel-flag {
+    max-height: 30px;
+    max-width: 40px;
+    margin-left: 20px;
+}
+
+.travel-mid-photo {
+    width: 100%;
+    box-shadow: 4px 4px 9px #444;
+    margin: 20px 0;
+    border: 10px solid #fff;
+}
+
+
+
+/*Mail Gif CSS*/
+.back-drop{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.sending-mail{
+    background-image: url('../images/email1.gif');
+    background-repeat: no-repeat;
+    height: 350px;
+    z-index: 5;
+
+}
+
+.sent-mail{
+    background-image: url('../images/rocket2.gif');
+    height: 350px;
+    z-index: 5;
+    background-position: center;
+}
+
+/*work css*/
+.my-video-dimensions, .video-js{
+    width: 100% !important;
+    background-color: #222;
+}
+
+.video-container{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 600px) {
+
+    .sm-m-t-20{
+        margin-top: 20px;
+    }
+
+    .intro-page{
+        background-position-x: 90%;
+    }
+    .scroll-indicator{
+        top: 10px;
+    }
+
+    .navigation{
+        width: 80%;
+        left: -80%;
+        transition: all 0.5s;
+    }
+    .hide-navigation{
+        left: -80%;
+    }
+    .show-navigation{
+        left: 0;
+        background-color: rgba(245, 245, 245, 0.85);
+    }
+   .navigation .navigation-button{
+        display: block;
+        position: relative;
+        left: 100%;
+        top: -40px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        width: 50px;
+        padding: 10px;
+    }
+
+    .media-page{
+        padding: 0;
+    }
+
+    .page-header{
+        margin: 50px 0 50px 0;
+    }
+    .sm{
+        font-size: 0.7em;
+    }
+
+    .page-content{
+        margin: 0;
+        font-size: 0.3em;
+    }
+    .page-content p{
+        padding: 20px 0 0 0;
+    }
+
+    #map{
+        margin: 30px -45px 0 -45px;
+        width: 104vw;
+    }
+  }

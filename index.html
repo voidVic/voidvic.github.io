@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <link rel=icon href="favicon.ico">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>Ankit.</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="css/media-query.css">
+
+        <!-- Script for html -->
+        <script src="scripts/home.js"></script>
+        <script src="scripts/work.js"></script>
+        <script src="scripts/travel.js"></script>
+    </head>
+
+  <body ng-app="blog">
+    <div class="intro-page">
+      <div class="name-block">
+        <div class="salutation">Hey, I'm</div>
+        <div class="name">ANKIT SHARMA</div>
+      </div>
+      <div class="scroll-indicator" onclick="scrolltoContent()">
+        <img
+          src="images/scroll3.gif"
+          width="30px"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div
+      class="navigation"
+      ng-controller="navController as navCtrl"
+      ng-class="navCtrl.isMenuHidden ? 'hide-navigation' : 'show-navigation'"
+    >
+      <div
+        class="navigation-button"
+        ng-click="navCtrl.hideShowMenu()"
+        onclick="menuClicked()"
+      >
+        <span
+          class="glyphicon glyphicon-menu-hamburger"
+          ng-show="navCtrl.isMenuHidden"
+        ></span>
+        <span
+          class="glyphicon glyphicon-remove"
+          ng-hide="navCtrl.isMenuHidden"
+        ></span>
+      </div>
+      <div>
+        <div class="side-pic">
+          <a
+            onmouseover="navHover(true)"
+            onmouseleave="navHover(false)"
+            onclick="navClick(1)"
+            >ankit</a
+          >
+          <span class="dot">.</span>
+        </div>
+        <div class="nav">
+          <a
+            onmouseover="navHover(true)"
+            onmouseleave="navHover(false)"
+            onclick="navClick(1)"
+            >Home</a
+          >
+        </div>
+        <div class="nav">
+          <a
+            onmouseover="navHover(true)"
+            onmouseleave="navHover(false)"
+            onclick="navClick(2)"
+            >Work</a
+          >
+        </div>
+        <div class="nav">
+          <a
+            onmouseover="navHover(true)"
+            onmouseleave="navHover(false)"
+            onclick="navClick(3)"
+            >Travel</a
+          >
+        </div>
+        <!-- <div class="nav">
+          <a
+            onmouseover="navHover(true)"
+            onmouseleave="navHover(false)"
+            onclick="navClick(4)"
+            >Contact</a
+          > -->
+        </div>
+      </div>
+
+      <div class="footer">
+        <a
+          target="_blank"
+          href="https://www.instagram.com/voidvic/"
+          class="fa fa-instagram"
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.github.com/voidvic/"
+          class="fa fa-github"
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/voidvic/"
+          class="fa fa-linkedin"
+        ></a>
+      </div>
+    </div>
+
+    <div class="content col-lg-12 col-md-12" id="mainContent">
+      <div class="nav-placeholder col-lg-3 col-md-3 d-xs-none d-sm-none"></div>
+      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+        <div class="wrapper">
+          <div class="media-page" id="media-page">
+            <ui-view></ui-view>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- functional scripts -->
+    <script src="scripts/pageScroll.js"></script>
+    <script src="scripts/navigation.js"></script>
+  </body>
+</html>
