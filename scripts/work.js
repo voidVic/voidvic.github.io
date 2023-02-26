@@ -26,7 +26,7 @@ const getWorkHTML = function() {
         videosDom.push(`
             <div class="video-container col-sm-12 col-md-12 col-lg-12">
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <video id='my-video' class='video-js' controls preload='auto' width='640' height='264' poster='images/rocket1.gif'
+                    <video id='my-video' class='video-js' controls preload='auto' width='640' height='264'
                         data-setup='{}'>
                         <source src='${vid.videoLink}' type='video/mp4'>
                         <p class='vjs-no-js'>

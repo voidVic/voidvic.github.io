@@ -31,88 +31,58 @@
         />
       </div>
     </div>
+    <div class="navigation">
+        <div class="navigation-button" ng-click="navCtrl.hideShowMenu()" onclick="menuClicked()">
+            <span id="nav-open" class="glyphicon glyphicon-menu-hamburger"></span>
+            <span id="nav-close" class="glyphicon glyphicon-remove"></span>
+        </div>
+        <div>
+          <div class="side-pic">
+            <a
+              onmouseover="navHover(true)"
+              onmouseleave="navHover(false)"
+              onclick="navClick(1)"
+              >ankit</a
+            >
+            <span class="dot">.</span>
+          </div>
+          <div class="nav">
+            <a
+              onmouseover="navHover(true)"
+              onmouseleave="navHover(false)"
+              onclick="navClick(1)"
+              >Home</a
+            >
+          </div>
+          <div class="nav">
+            <a
+              onmouseover="navHover(true)"
+              onmouseleave="navHover(false)"
+              onclick="navClick(2)"
+              >Work</a
+            >
+          </div>
+          <div class="nav">
+            <a
+              onmouseover="navHover(true)"
+              onmouseleave="navHover(false)"
+              onclick="navClick(3)"
+              >Travel</a
+            >
+          </div>
+        </div>
 
-    <div
-      class="navigation"
-      ng-controller="navController as navCtrl"
-      ng-class="navCtrl.isMenuHidden ? 'hide-navigation' : 'show-navigation'"
-    >
-      <div
-        class="navigation-button"
-        ng-click="navCtrl.hideShowMenu()"
-        onclick="menuClicked()"
-      >
-        <span
-          class="glyphicon glyphicon-menu-hamburger"
-          ng-show="navCtrl.isMenuHidden"
-        ></span>
-        <span
-          class="glyphicon glyphicon-remove"
-          ng-hide="navCtrl.isMenuHidden"
-        ></span>
-      </div>
-      <div>
-        <div class="side-pic">
-          <a
-            onmouseover="navHover(true)"
-            onmouseleave="navHover(false)"
-            onclick="navClick(1)"
-            >ankit</a
-          >
-          <span class="dot">.</span>
-        </div>
-        <div class="nav">
-          <a
-            onmouseover="navHover(true)"
-            onmouseleave="navHover(false)"
-            onclick="navClick(1)"
-            >Home</a
-          >
-        </div>
-        <div class="nav">
-          <a
-            onmouseover="navHover(true)"
-            onmouseleave="navHover(false)"
-            onclick="navClick(2)"
-            >Work</a
-          >
-        </div>
-        <div class="nav">
-          <a
-            onmouseover="navHover(true)"
-            onmouseleave="navHover(false)"
-            onclick="navClick(3)"
-            >Travel</a
-          >
-        </div>
-        <!-- <div class="nav">
-          <a
-            onmouseover="navHover(true)"
-            onmouseleave="navHover(false)"
-            onclick="navClick(4)"
-            >Contact</a
-          > -->
-        </div>
-      </div>
+        <div class="footer">
+            <a target="_blank" href="https://www.instagram.com/voidvic/" class="fa fa-instagram"></a>
+            <a target="_blank" href="https://www.github.com/voidvic/" class="fa fa-github"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/voidvic/" class="fa fa-linkedin"></a>
 
-      <div class="footer">
-        <a
-          target="_blank"
-          href="https://www.instagram.com/voidvic/"
-          class="fa fa-instagram"
-        ></a>
-        <a
-          target="_blank"
-          href="https://www.github.com/voidvic/"
-          class="fa fa-github"
-        ></a>
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/voidvic/"
-          class="fa fa-linkedin"
-        ></a>
-      </div>
+        </div>
     </div>
+
+
+
+
 
     <div class="content col-lg-12 col-md-12" id="mainContent">
       <div class="nav-placeholder col-lg-3 col-md-3 d-xs-none d-sm-none"></div>
@@ -126,7 +96,6 @@
     </div>
 
     <!-- functional scripts -->
-    <script src="scripts/pageScroll.js"></script>
     <script src="scripts/navigation.js"></script>
   </body>
 </html>
